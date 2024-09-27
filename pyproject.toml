@@ -1,0 +1,30 @@
+[project]
+name = "meetup-notifier"
+version = "0.1.1"
+description = "Simple package to get information about meetups"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "parsel>=1.9.1",
+    "requests>=2.32.3",
+    "shellingham>=1.5.4",
+    "typer>=0.12.5",
+]
+
+[project.scripts]
+meetup-notifier = "meetup_notifier:app"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.uv]
+dev-dependencies = [
+    "pytest>=8.3.3",
+    "requests-mock>=1.12.1",
+    "ruff>=0.6.8",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]

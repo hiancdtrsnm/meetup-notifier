@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charSet="utf-8" />
+    <style data-fullcalendar="true"></style>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="service" content="web-next" />
+    <meta name="X-Location" content="east" />
+    <meta name="X-Build-Version" content="6840afd9e3dd06b271b93757c5df243b735677ce" />
+    <link rel="icon" href="https://secure.meetupstatic.com/next/images/general/favicon.ico" type="image/x-icon"
+        sizes="any" />
+    <link rel="shortcut icon" href="https://secure.meetupstatic.com/next/images/general/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="120x120"
+        href="https://secure.meetupstatic.com/next/images/general/m_swarm_120x120.png" />
+    <link rel="apple-touch-icon" sizes="152x152"
+        href="https://secure.meetupstatic.com/next/images/general/m_swarm_152x152.png" />
+    <link rel="apple-touch-icon" sizes="167x167"
+        href="https://secure.meetupstatic.com/next/images/general/m_swarm_167x167.png" />
+    <link rel="shortcut icon" sizes="128x128"
+        href="https://secure.meetupstatic.com/next/images/general/m_swarm_128x128.png" />
+    <link rel="shortcut icon" sizes="196x196"
+        href="https://secure.meetupstatic.com/next/images/general/m_swarm_196x196.png" />
+    <link rel="preload" href="/_next/static/media/Graphik-Regular.7c14ed95.woff2" as="font" type="font/woff2"
+        crossorigin="true" />
+    <link rel="preload" href="/_next/static/media/Graphik-Bold.9ca67fd8.woff2" as="font" type="font/woff2"
+        crossorigin="true" />
+    <link rel="preload" href="/_next/static/media/Graphik-Semibold.0c4bd776.woff2" as="font" type="font/woff2"
+        crossorigin="true" />
+    <link rel="preload" href="/_next/static/media/Graphik-Medium.4251d5ac.woff2" as="font" type="font/woff2"
+        crossorigin="true" />
+    <script type="text/javascript" src="//script.crazyegg.com/pages/scripts/0118/4627.js" async=""></script>
+    <script
+        type="application/ld+json">{"@type":"Organization","@context":"https://schema.org","url":"https://www.meetup.com/es-ES/python-valencia-meetup/events/300608083/","name":"Meetup","logo":"https://secure.meetupstatic.com/next/images/general/m_swarm_630x630.png","sameAs":["https://www.facebook.com/meetup/","https://twitter.com/Meetup/","https://www.youtube.com/meetup","https://www.instagram.com/meetup/"]}</script>
+    <title>Linters en Python (con ejemplo práctico), Tue, Apr 30, 2024, 6:30 PM | Meetup</title>
+    <meta name="description"
+        content="Entre las diferentes herramientas que disponemos en python para mejorar la calidad de nuestro código, los linters destacan por su inmediatez y sencillez. En esta charla hab" />
+    <meta property="fb:app_id" content="2403839689" />
+    <meta property="og:site_name" content="Meetup" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title"
+        content="Linters en Python (con ejemplo práctico), Tue, Apr 30, 2024, 6:30 PM   | Meetup" />
+    <meta property="og:description"
+        content="Entre las diferentes herramientas que disponemos en python para mejorar la calidad de nuestro código, los linters destacan por su inmediatez y sencillez. En esta charla hab" />
+    <meta property="og:url" content="https://www.meetup.com/es-ES/python-valencia-meetup/events/300608083/" />
+    <meta property="og:image" content="https://secure.meetupstatic.com/photos/event/9/2/5/600_520622341.jpeg" />
+    <meta property="al:android:app_name" content="Meetup" />
+    <meta property="al:android:package" content="com.meetup" />
+    <meta property="al:ios:app_store_id" content="375990038" />
+    <meta property="al:ios:app_name" content="Meetup" />
+    <meta property="al:web:should_fallback" content="true" />
+    <meta property="al:android:url" content="meetup://" />
+    <meta property="al:ios:url" content="meetup://" />
+    <meta property="al:web:url" content="https://www.meetup.com/" />
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:site" content="@meetup" />
+    <meta property="twitter:image" content="https://secure.meetupstatic.com/photos/event/9/2/5/600_520622341.jpeg" />
+    <meta property="twitter:description"
+        content="Entre las diferentes herramientas que disponemos en python para mejorar la calidad de nuestro código, los linters destacan por su inmediatez y sencillez. En esta charla hab" />
+    <meta property="twitter:app:id:iphone" content="375990038" />
+    <meta property="twitter:app:name:iphone" content="Meetup" />
+    <meta property="twitter:app:id:ipad" content="375990038" />
+    <meta property="twitter:app:name:ipad" content="Meetup" />
+    <meta property="twitter:app:id:googleplay" content="com.meetup" />
+    <meta property="twitter:app:name:googleplay" content="Meetup" />
+    <meta name="robots" content="noindex, follow, max-image-preview:large" />
+    <link rel="canonical" href="https://www.meetup.com/es-ES/python-valencia-meetup/events/300608083/" />
+    <link rel="preconnect" href="https://secure.meetupstatic.com" />
+    <link rel="dns-prefetch" href="https://secure.meetupstatic.com" />
+    <link rel="preconnect" href="https://secure-content.meetupstatic.com" />
+    <link rel="dns-prefetch" href="https://secure-content.meetupstatic.com" />
+    <link rel="preconnect" href="https://www.googletagmanager.com" />
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+    <meta name="apple-itunes-app"
+        content="app-id=375990038, app-clip-bundle-id=com.meetup.iphone.MeetupAppClip, app-clip-display=card" />
+    <script
+        type="application/ld+json">{"@context":"https://schema.org","@type":"Event","name":"Linters en Python (con ejemplo práctico)","url":"https://www.meetup.com/python-valencia-meetup/events/300608083/","description":"Entre las diferentes herramientas que disponemos en python para mejorar la calidad de nuestro código, los linters destacan por su inmediatez y sencillez. E","startDate":"2024-04-30T18:30:00+02:00","endDate":"2024-04-30T20:30:00+02:00","eventStatus":"https://schema.org/EventScheduled","image":["https://secure-content.meetupstatic.com/images/classic-events/520622341/676x676.jpg","https://secure-content.meetupstatic.com/images/classic-events/520622341/676x507.jpg","https://secure-content.meetupstatic.com/images/classic-events/520622341/676x380.jpg"],"eventAttendanceMode":"https://schema.org/OfflineEventAttendanceMode","location":{"@type":"Place","name":"wayCO Cabanyal | Coworking València","address":{"@type":"PostalAddress","addressLocality":"València","addressRegion":"Va","addressCountry":"es","streetAddress":"Carrer de Marià Cuber, 17, València, Va"},"geo":{"@type":"GeoCoordinates","latitude":39.464138,"longitude":-0.334373}},"organizer":{"@type":"Organization","name":"Python Valencia","url":"https://www.meetup.com/python-valencia-meetup/"}}</script>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"RsvpAction"}</script>
+    <link rel="preload" as="image"
+        imageSrcSet="https://secure.meetupstatic.com/photos/event/9/2/5/600_520622341.webp?w=384 1x, https://secure.meetupstatic.com/photos/event/9/2/5/600_520622341.webp?w=750 2x" />
+    <meta name="next-head-count" content="59" />
+    <meta name="next_csrf" content="975272ee-2878-4ec5-a5b3-c165466b0e65" />
+    <link data-next-font="" rel="preconnect" href="/" crossorigin="anonymous" />
+    <link rel="preload" href="/_next/static/css/7a55fee3a2864cd6.css" as="style" />
+    <link rel="stylesheet" href="/_next/static/css/7a55fee3a2864cd6.css" data-n-g="" />
+    <link rel="preload" href="/_next/static/css/0ee0d4767aa725fa.css" as="style" />
+    <link rel="stylesheet" href="/_next/static/css/0ee0d4767aa725fa.css" data-n-p="" /><noscript
+        data-n-css=""></noscript>
+    <script defer="" nomodule="" src="/_next/static/chunks/polyfills-c67a75d1b6f99dc8.js"></script>
+    <script src="https://dbhsejcg.meetup.com/meetup.js" defer="" data-nscript="beforeInteractive"></script>
+    <script defer="" src="/_next/static/chunks/1640.26579b15e7a421b2.js"></script>
+    <script src="/_next/static/chunks/webpack-3a4c4ea21874c15c.js" defer=""></script>
+    <script src="/_next/static/chunks/framework-d4482e0e65fb0e70.js" defer=""></script>
+    <script src="/_next/static/chunks/main-b66aa98f9d7e39ca.js" defer=""></script>
+    <script src="/_next/static/chunks/pages/_app-2f8e8c1b7875b0d4.js" defer=""></script>
+    <script src="/_next/static/chunks/28780a76-71a7d5f11390cb52.js" defer=""></script>
+    <script src="/_next/static/chunks/59245-4865a42855d8f345.js" defer=""></script>
+    <script src="/_next/static/chunks/62168-729f9674aa135410.js" defer=""></script>
+    <script src="/_next/static/chunks/87720-e3671adfb451a4f7.js" defer=""></script>
+    <script src="/_next/static/chunks/55423-39d74469ed0acb39.js" defer=""></script>
+    <script src="/_next/static/chunks/18230-2e17974de4154d67.js" defer=""></script>
+    <script src="/_next/static/chunks/92249-cc4cdb0f67c3b78c.js" defer=""></script>
+    <script src="/_next/static/chunks/16391-1f3d4d9d9a296409.js" defer=""></script>
+    <script src="/_next/static/chunks/36047-962eaf2011715889.js" defer=""></script>
+    <script src="/_next/static/chunks/74754-98ea385790da02ea.js" defer=""></script>
+    <script src="/_next/static/chunks/94470-997e2fcac7912375.js" defer=""></script>
+    <script src="/_next/static/chunks/60753-bad487a5d91bc3e4.js" defer=""></script>
+    <script src="/_next/static/chunks/10629-e9043a7fd5d4dc0c.js" defer=""></script>
+    <script src="/_next/static/chunks/91757-da95a6f1f5832c18.js" defer=""></script>
+    <script src="/_next/static/chunks/79676-d51782595df3ea70.js" defer=""></script>
+    <script src="/_next/static/chunks/5232-6aa76c38f7fa35f2.js" defer=""></script>
+    <script src="/_next/static/chunks/18611-836b722a53cee3d9.js" defer=""></script>
+    <script src="/_next/static/chunks/5710-69141450e4bd9e04.js" defer=""></script>
+    <script src="/_next/static/chunks/31595-e6506ce9c04a192f.js" defer=""></script>
+    <script src="/_next/static/chunks/72066-3d3693e2c23a160d.js" defer=""></script>
+    <script src="/_next/static/chunks/1588-18c40cbf83907f59.js" defer=""></script>
+    <script src="/_next/static/chunks/55098-ebbf4c15f3e60fd7.js" defer=""></script>
+    <script src="/_next/static/chunks/2832-a28fc1032bb6ff6b.js" defer=""></script>
+    <script src="/_next/static/chunks/14876-fa59987531e66a3e.js" defer=""></script>
+    <script src="/_next/static/chunks/69273-cdb1a605bfe4d77a.js" defer=""></script>
+    <script src="/_next/static/chunks/78335-8cf35ac4ae850da6.js" defer=""></script>
+    <script src="/_next/static/chunks/15050-67585f97e3ed0be4.js" defer=""></script>
+    <script src="/_next/static/chunks/9057-0b29f44c80143763.js" defer=""></script>
+    <script src="/_next/static/chunks/pages/%5Bslug%5D/events/%5BeventId%5D-6b92920f06068fd8.js" defer=""></script>
+    <script src="/_next/static/6840afd9e3dd06b271b93757c5df243b735677ce/_buildManifest.js" defer=""></script>
+    <script src="/_next/static/6840afd9e3dd06b271b93757c5df243b735677ce/_ssgManifest.js" defer=""></script>
+</head>
+
+<body class="font-body">
+    <script>0</script>
+    <div id="__next"><noscript id="google-tag-manager"><iframe title="gtm"
+                src="https://www.googletagmanager.com/ns.html?id=GTM-T2LNGD" height="0" width="0"
+                style="display:none;visibility:hidden"></iframe></noscript>
+        <div role="status" aria-live="polite" class="sr-only"></div>
+        <main id="main"></main>
+        <div class=""><a class="text-viridian focus:p-2 bg-white c1r8us06" href="#main">Skip to content</a>
+            <div id="a11y-announcement"></div>
+            <div class="flex min-h-screen flex-col" id="page" data-event-category="eventHome">
+                <header class="top-0 z-50 bg-white mb-10 xs:mb-0" data-event-label="Header">
+                    <div class="px-6 sm:px-4 xl:px-0 xl:px-4 border-b border-solid border-gray2 flex flex-col">
+                        <div
+                            class="transition-all ease-linear duration-300 d3hxo23 overflow-hidden sm:overflow-visible">
+                            <div class="flex items-center justify-between du3dmzv">
+                                <div class="w-[28px] sm:hidden">
+                                    <div class="block sm:hidden xmedia"></div>
+                                </div>
+                                <div class="flex items-center space-x-10"><a id="homepage-link" aria-label="Meetup logo"
+                                        data-event-label="Meetup logo" class="lg:pl-6"
+                                        href="https://www.meetup.com/"><svg viewBox="0 0 111 40"
+                                            xmlns="http://www.w3.org/2000/svg" height="34px">
+                                            <path
+                                                d="M110.994 23.367a1.687 1.687 0 00-.11-.458c-.37-.962-2.054-.065-2.629.176-1.035.434-2.219 1.006-3.365.678-.317-.091-.224-.361 0-.499.112-.068 3.055-1.733 3.921-5.423 1.386-5.903-2.867-7.545-4.545-7.744-1.706-.202-3.609.061-4.411.384-2.273.913-2.866 2.943-3.023 4.159-.215 1.672-.24 4.59-.447 5.903-.136.865-.78 2.178-2.048 2.053-2.447-.241-3.571-1.18-3.493-2.722.054-1.084.039-1.3.38-3.704.293-2.06.478-2.551.478-3.022 0-1.349-1.813-1.621-2.419-1.014-.468.469-.585 1.426-.702 3.042-.11 1.519-.343 3.495-.644 4.7-.468 1.877-.656 2.014-1.083 2.551-.887 1.116-2.526.77-3.326.009-.47-.448-.534-.845-.443-2.16.091-1.315.306-3.606.608-5.995.263-2.09.082-2.404-.56-2.99-.597-.546-2.884-.465-3.943-.465-1.639 0-1.541.78-1.649 3.44-.047 1.161-.101 2.923-.217 4.287-.188 2.22-4.425 3.89-6.373 3.79-2.019-.104-2.213-3.873-2.34-4.75-.129-.876-.18-8.44.038-8.697.155-.18 1.37-.318 2.755-.589 3.067-.6 3.508-.994 3.512-1.954.002-.471-.028-1.13-.55-1.307-.306-.104-1.1-.222-2.153-.346-3.037-.358-3.465-.248-3.482-.633-.029-.674.035-1.971-.019-2.482C68.58.329 67.108-.093 65.45.017c-.327.021-.78.127-.816.565-.036.439-.033.777-.086 1.52-.117 1.651-.15 1.83-.79 1.827-.57-.003-5.312-.422-6.223-.13-.912.292-.875.913-.948 1.224-.073.31.09 2.173.182 2.977.091.803.267 1.896.376 2.06.11.165.452.631 1.404.512 3.234-.405 5.391-.894 5.829-1.003.437-.11.487-.165.492.182.002.197.084 4.146.098 5.319.023 2.006.362 7.817-5.044 8.718-2.249.375-4.357-.28-5.316-1.337-.544-.6-.277-.678-.037-1.068.364-.593 3.402-4.162.856-7.864-1.501-2.184-5.101-2.357-6.408-1.79-1.013.439-1.832 1.8-1.99 3.46-.488 5.12 2.442 8.287 2.556 8.482.136.234-.376.988-2.166 1.25-2.4.352-6.085-2.543-5.99-2.92.047-.18 1.679-2.853 1.718-5.436.013-.879-.277-2.036-.878-3.205-.602-1.169-2.496-2.973-4.546-2.577-4.824.93-4.274 5.696-3.94 6.997.694 2.69 2.319 5.064 2.584 5.539.361.645-10.207 4.839-10.616.913-.407-3.892 5.371-12.284 4.916-15.54-.41-2.933-2.382-3.547-4.097-3.577-1.667-.03-2.107.236-2.671.564-.325.189-.792.563-1.44-.055-.431-.411-.716-.699-1.172-1.064-.231-.185-.601-.42-1.221-.511-.62-.091-1.422 0-1.932.219-.51.22-.912.603-1.331.968-.42.365-1.483 1.559-2.474 1.119-.43-.191-1.887-.92-2.937-1.375-2.029-.88-4.955.545-6.008 2.421C3.815 10.193.72 21.161.252 22.607c-1.052 3.248 1.33 5.896 4.545 5.744 1.358-.065 2.263-.562 3.121-2.126.496-.903 5.156-13.097 5.502-13.681.252-.425 1.09-.984 1.8-.62.712.366.853 1.128.748 1.845-.17 1.16-3.456 8.6-3.582 9.441-.215 1.432.464 2.228 1.947 2.306 1.016.053 2.029-.313 2.833-1.832.45-.849 5.631-11.248 6.09-11.942.504-.762.91-1.013 1.422-.986.399.02 1.036.123.876 1.319-.156 1.172-4.322 8.803-4.76 10.671-.663 2.834 1.151 6.646 6.01 6.821 2.414.088 8.002-.966 11.15-3.357 1.143-.868.841-.943 1.553-.311 1.025.909 2.927 2.189 4.8 2.189 4.253 0 7.359-2.66 7.5-2.756a.111.111 0 01.145.017c.258.28 2.895 1.751 4.743 1.812 4.399.145 7.004-2.3 7.988-3.451a22.03 22.03 0 001.512-1.987.157.157 0 01.246-.018c.263.29 2.247 3.942 6.188 3.438 2.198-.281 5.467-2.139 5.696-2.39a.1.1 0 01.17.035c.115.318.618 2.11 2.633 3.535 1.652 1.169 4.832 1.403 6.243.626 1.17-.644 1.639-1.056 2.458-1.876.352-.353.888-.71 1.854-.505 1.08.229 3.934.735 4.116.822.205.097.237.47.176.86-.098.614-.33 2.766-.566 4.775-.237 2.009-.994 8.712.8 8.96 1.084.15 2.025-.878 2.274-1.881.624-2.517.738-5.35 1.148-7.78.49-2.893.684-3.704.86-4.027.146-.268.146-.205 2.167-.033 1.4.12 2.536.315 4.223.079 1.398-.196 4.267-1.256 4.113-2.976m-69.897-6.502c-.067.947-.31 1.547-.811 2.419-.313.544-.637.137-.825-.132-.27-.386-1.65-3.744-.596-4.437.297-.195.886-.307 1.312-.068.426.238.683.585.8.972.12.393.164.613.12 1.246m13.092.488c-.123 1.09-.585 1.707-.755 1.936-.301.404-.422.563-.71.27-.234-.238-1.109-2.02-1.235-3.195-.069-.632.106-1.535.636-1.747.558-.223 1.123-.122 1.52.397.623.817.632 1.564.544 2.339M101.7 22.13c-.657.27-.943.105-.905-.982.008-.234 1.063-5.687 3.08-6.675.572-.28 1.152-.268 1.554.18.76.847.56 2.152-.012 3.342-.828 1.727-2.814 3.764-3.717 4.135"
+                                                fill="#F64060" fill-rule="evenodd"></path>
+                                        </svg></a>
+                                    <div class="m1t1fice hidden gl:block xmedia"></div>
+                                </div>
+                                <div class="block sm:hidden xmedia"></div>
+                                <div class="sm:ml-4 hidden sm:block xmedia"></div>
+                            </div>
+                            <div class="mb-2 mt-1 pointer-events-none block gl:hidden xmedia"></div>
+                        </div>
+                    </div>
+                </header>
+                <div class="flex flex-grow flex-col">
+                    <main id="main" class="flex flex-grow flex-col items-center justify-between">
+                        <div class="flex flex-grow flex-col items-center"></div>
+                        <div class="px-5 w-full border-b border-shadowColor bg-white py-2 lg:py-6"
+                            data-event-label="top">
+                            <div class="md:max-w-screen mx-auto">
+                                <h1 class="overflow-hidden overflow-ellipsis text-3xl font-bold leading-snug">Linters en
+                                    Python (con ejemplo práctico)</h1><a
+                                    href="https://www.meetup.com/python-valencia-meetup/events/300608083//attendees/"
+                                    class="block w-fit hover:no-underline" data-event-label="hosted-by"
+                                    aria-label="Hosted By Andros Fenollosa H.">
+                                    <div class="mt-4 flex lg:mt-5">
+                                        <div>
+                                            <picture><img alt="Photo of Andros Fenollosa Hurtado"
+                                                    src="https://secure-content.meetupstatic.com/images/classic-member/313048108/45x45.jpg"
+                                                    style="width:48px;height:48px;min-width:48px;min-height:48px"
+                                                    loading="eager" class="rounded-full object-cover" /></picture>
+                                        </div>
+                                        <div class="ml-6">
+                                            <div>Hosted By</div>
+                                            <div><span class="font-medium">Andros Fenollosa H.</span></div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div><span style="font-size:0"></span>
+                        <div
+                            class="flex w-full flex-col items-center justify-between border-t border-gray2 bg-gray1 pb-6 lg:px-5">
+                            <div class="md:max-w-screen w-full bg-gray1">
+                                <div class="flex flex-col-reverse lg:flex-row">
+                                    <div class="flex flex-grow flex-col lg:mt-5 lg:max-w-2xl" data-event-label="body">
+                                        <div class="emrv9za" data-event-label="event-home">
+                                            <div>
+                                                <picture data-testid="event-description-image">
+                                                    <div class="mt-0 w-full lg:mt-8"><img
+                                                            alt="Linters en Python (con ejemplo práctico)" width="375"
+                                                            height="210" decoding="async" data-nimg="1" class="w-full"
+                                                            style="color:transparent"
+                                                            srcSet="https://secure.meetupstatic.com/photos/event/9/2/5/600_520622341.webp?w=384 1x, https://secure.meetupstatic.com/photos/event/9/2/5/600_520622341.webp?w=750 2x"
+                                                            src="https://secure.meetupstatic.com/photos/event/9/2/5/600_520622341.webp?w=750" />
+                                                    </div>
+                                                </picture>
+                                            </div>
+                                            <div id="event-details"
+                                                class="px-6 sm:px-4 xl:px-0 md:max-w-screen mt-5 w-full">
+                                                <div class="mb-5 flex items-center justify-between">
+                                                    <h2 class="text-xl font-semibold">Details</h2>
+                                                </div>
+                                                <div class="break-words">
+                                                    <p class="mb-4">Entre las diferentes herramientas que disponemos en
+                                                        python para mejorar la calidad de nuestro código, los linters
+                                                        destacan por su inmediatez y sencillez. En esta charla
+                                                        hablaremos de nuestra experiencia real instalando y usando Ruff,
+                                                        el linter de moda. Además, veremos un caso práctico de mejora de
+                                                        código gracias al uso del linter.</p>
+                                                    <p class="mb-4">## Breve resumen de trayectoria laboral</p>
+                                                    <ul class="pl-5 list-disc mb-4">
+                                                        <li>Julio Martínez: Staff Engineer en Datamaran. Lleva desde
+                                                            2004 trabajando en la industria. Empezó como desarrollador
+                                                            web, para especializarse en backend y más tarde en big data.
+                                                            Ha trabajado en compañías como Ulabox (Barcelona), Hybrid
+                                                            Theory (Londres) y Datamaran (Valencia - Londres).</li>
+                                                        <li>Elena M. Codonyer : Software Engineer en Datamaran. Lleva
+                                                            desde 2020 trabajando en Datamaran, donde empezó como Data
+                                                            Scientist. Más tarde se ha especializado en backend, con un
+                                                            interés en la mejora de la calidad de código.</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="mt-6 px-6 font-semibold sm:px-4 xl:px-0">
+                                            <div class="flex flex-wrap gap-x-2 overflow-x-auto">
+                                                <div class="flex gap-x-2"><a id="topics-link-1064" title="Python"
+                                                        class=" tag--topic mb-2 max-w-tag overflow-hidden text-ellipsis whitespace-nowrap">Python</a><a
+                                                        id="topics-link-8192" title="Open Source"
+                                                        class=" tag--topic mb-2 max-w-tag overflow-hidden text-ellipsis whitespace-nowrap">Open
+                                                        Source</a></div>
+                                                <div class="flex gap-x-2"><a id="topics-link-15582"
+                                                        title="Web Development"
+                                                        class=" tag--topic mb-2 max-w-tag overflow-hidden text-ellipsis whitespace-nowrap">Web
+                                                        Development</a><a id="topics-link-32528"
+                                                        title="Computer Programming"
+                                                        class=" tag--topic mb-2 max-w-tag overflow-hidden text-ellipsis whitespace-nowrap">Computer
+                                                        Programming</a></div>
+                                            </div>
+                                        </div>
+                                        <div class="w-full">
+                                            <div class="flex justify-between">
+                                                <div aria-hidden="true" role="presentation"
+                                                    class="Shimmer_shimmer__aKLib axppw6p"></div>
+                                                <div aria-hidden="true" role="presentation"
+                                                    class="Shimmer_shimmer__aKLib axppw6p"></div>
+                                                <div aria-hidden="true" role="presentation"
+                                                    class="Shimmer_shimmer__aKLib axppw6p hidden sm:block"></div>
+                                                <div aria-hidden="true" role="presentation"
+                                                    class="Shimmer_shimmer__aKLib axppw6p hidden sm:block"></div>
+                                            </div>
+                                        </div><a id="events-link" class="hover:no-underline"
+                                            data-event-label="see-more-events"
+                                            href="https://www.meetup.com/python-valencia-meetup/events/">
+                                            <div id="events" class="px-6 sm:px-4 xl:px-0 md:max-w-screen mt-5 w-full">
+                                                <div class="mb-5 flex items-center justify-between"></div>
+                                                <div
+                                                    class="w-100 flex cursor-pointer flex-row items-center bg-white p-6 lg:rounded-2xl">
+                                                    <img alt="Photo of Python Valencia group" data-testid="next-image"
+                                                        loading="lazy" width="56" height="56" decoding="async"
+                                                        data-nimg="1" class="rounded" style="color:transparent"
+                                                        srcSet="https://secure-content.meetupstatic.com/images/classic-events/512739430/56x56.jpg?w=56?w=64 1x, https://secure-content.meetupstatic.com/images/classic-events/512739430/56x56.jpg?w=56?w=128 2x"
+                                                        src="https://secure-content.meetupstatic.com/images/classic-events/512739430/56x56.jpg?w=56?w=128" />
+                                                    <div class="ml-5">
+                                                        <div>Python Valencia</div>
+                                                        <div class="text-viridian hover:no-underline"
+                                                            data-testid="see-more-link">See more events</div>
+                                                    </div>
+                                                    <div class="ml-auto">
+                                                        <div data-testid="group-info-right-arrow"
+                                                            style="width:16px;height:16px"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="w-100 lg:mx-0 lg:ml-28 lg:mt-10 lg:w-90" data-event-label="info">
+                                        <div class="top-24 sticky">
+                                            <div class="hidden lg:mb-4 lg:block">
+                                                <div class="rounded-2xl bg-white lg:p-6"><a id="event-group-link"
+                                                        class="hover:no-underline" data-event-label="event-group"
+                                                        href="https://www.meetup.com/python-valencia-meetup/">
+                                                        <div class="flex items-center py-4 lg:py-0 ">
+                                                            <div class="dewqijm"><img
+                                                                    alt="Photo of Python Valencia group"
+                                                                    data-testid="next-image" loading="lazy" width="56"
+                                                                    height="56" decoding="async" data-nimg="1"
+                                                                    class="rounded" style="color:transparent"
+                                                                    srcSet="https://secure-content.meetupstatic.com/images/classic-events/512739430/56x56.jpg?w=56?w=64 1x, https://secure-content.meetupstatic.com/images/classic-events/512739430/56x56.jpg?w=56?w=128 2x"
+                                                                    src="https://secure-content.meetupstatic.com/images/classic-events/512739430/56x56.jpg?w=56?w=128" />
+                                                            </div>
+                                                            <div class="ml-4">
+                                                                <div class="text-sm font-medium leading-5">Python
+                                                                    Valencia</div>
+                                                                <div class="mt-1 flex h-5 flex-row text-sm text-gray6">
+                                                                    <span class="mr-1"><span
+                                                                            class="capitalize">public</span>
+                                                                        group</span>
+                                                                    <div class="z-10 h-5 w-5"><button tabindex="0"
+                                                                            aria-label="This group’s content, including its members and event details, are visible to the public."
+                                                                            class="m-0 flex h-5 w-5 items-center justify-center rounded-full bg-white"><img
+                                                                                alt="question" loading="lazy" width="18"
+                                                                                height="18" decoding="async"
+                                                                                data-nimg="1" class="h-full w-full"
+                                                                                style="color:transparent"
+                                                                                srcSet="https://secure.meetupstatic.com/next/images/QuestionV2.svg?w=32 1x, https://secure.meetupstatic.com/next/images/QuestionV2.svg?w=48 2x"
+                                                                                src="https://secure.meetupstatic.com/next/images/QuestionV2.svg?w=48" /></button>
+                                                                    </div>
+                                                                </div>
+                                                                <div></div>
+                                                            </div>
+                                                        </div>
+                                                    </a></div>
+                                            </div>
+                                            <div id="event-info" class="text-sm">
+                                                <div class="bg-white px-5 pb-3 pt-6 sm:pb-4.5 lg:py-5 lg:rounded-t-2xl">
+                                                    <div>
+                                                        <div class="flex gap-x-4 md:gap-x-4.5 lg:gap-x-5">
+                                                            <div style="width:24px;height:24px"></div>
+                                                            <div>
+                                                                <div class="min-h-[40px] sm:min-h-max"><time
+                                                                        dateTime="2024-04-30T18:30:00+02:00"
+                                                                        class="block">Tuesday, April 30, 2024<br />6:30
+                                                                        PM<!-- --> to 8:30 PM<!-- -->
+                                                                        <!-- -->CEST</time></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="relative ml-10 lg:ml-11"
+                                                            data-testid="add-to-calendar"></div>
+                                                        <div class="flex flex-col">
+                                                            <div class="flex mt-5">
+                                                                <div style="width:24px;height:24px"></div>
+                                                                <div class="overflow-hidden pl-4 md:pl-4.5 lg:pl-5"><a
+                                                                        class="hover:text-viridian hover:no-underline"
+                                                                        data-testid="venue-name-link"
+                                                                        data-event-label="event-location"
+                                                                        target="_blank"
+                                                                        href="https://www.google.com/maps/search/?api=1&amp;query=39.464138%2C%20-0.334373">wayCO
+                                                                        Cabanyal | Coworking València</a>
+                                                                    <div class="text-gray6" data-testid="location-info">
+                                                                        Carrer de Marià Cuber, 17 · València, Va</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="w-full border-b border-gray2 lg:hidden"
+                                                        data-event-label="info">
+                                                        <div class="rounded-2xl bg-white lg:p-6"><a
+                                                                id="event-group-mobile-link" class="hover:no-underline"
+                                                                data-event-label="event-group"
+                                                                href="https://www.meetup.com/python-valencia-meetup/">
+                                                                <div class="flex items-center py-4 lg:py-0 ">
+                                                                    <div class="dewqijm"><img
+                                                                            alt="Photo of Python Valencia group"
+                                                                            data-testid="next-image" loading="lazy"
+                                                                            width="56" height="56" decoding="async"
+                                                                            data-nimg="1" class="rounded"
+                                                                            style="color:transparent"
+                                                                            srcSet="https://secure-content.meetupstatic.com/images/classic-events/512739430/56x56.jpg?w=56?w=64 1x, https://secure-content.meetupstatic.com/images/classic-events/512739430/56x56.jpg?w=56?w=128 2x"
+                                                                            src="https://secure-content.meetupstatic.com/images/classic-events/512739430/56x56.jpg?w=56?w=128" />
+                                                                    </div>
+                                                                    <div class="ml-4">
+                                                                        <div class="text-sm font-medium leading-5">
+                                                                            Python Valencia</div>
+                                                                        <div
+                                                                            class="mt-1 flex h-5 flex-row text-sm text-gray6">
+                                                                            <span class="mr-1"><span
+                                                                                    class="capitalize">public</span>
+                                                                                group</span>
+                                                                            <div class="z-10 h-5 w-5"><button
+                                                                                    tabindex="0"
+                                                                                    aria-label="This group’s content, including its members and event details, are visible to the public."
+                                                                                    class="m-0 flex h-5 w-5 items-center justify-center rounded-full bg-white"><img
+                                                                                        alt="question" loading="lazy"
+                                                                                        width="18" height="18"
+                                                                                        decoding="async" data-nimg="1"
+                                                                                        class="h-full w-full"
+                                                                                        style="color:transparent"
+                                                                                        srcSet="https://secure.meetupstatic.com/next/images/QuestionV2.svg?w=32 1x, https://secure.meetupstatic.com/next/images/QuestionV2.svg?w=48 2x"
+                                                                                        src="https://secure.meetupstatic.com/next/images/QuestionV2.svg?w=48" /></button>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div></div>
+                                                                    </div>
+                                                                </div>
+                                                            </a></div>
+                                                    </div>
+                                                </div>
+                                                <div><a data-testid="map-link" data-event-label="event-map"
+                                                        target="_blank" rel="noopener noreferrer"
+                                                        href="https://www.google.com/maps/search/?api=1&amp;query=39.464138%2C%20-0.334373">
+                                                        <picture><img class="w-full h-auto sm:h-full"
+                                                                srcSet="https://maps-googleapis.meetup.com/maps/api/staticmap?center=39.464138%2C%20-0.334373&amp;zoom=17&amp;size=480x300&amp;format=png&amp;scale=1&amp;key=AIzaSyBhcQiQISkjMBwLAugJj8V78nMPfitnr44&amp;markers=icon%3Ahttps%3A%2F%2Fsecure.meetupstatic.com%2Fnext%2Fimages%2Fevent%2Fmup-custom-google-map-pin.png%7Ccolor%3A0xF65858%7C39.464138%2C%20-0.334373, https://maps-googleapis.meetup.com/maps/api/staticmap?center=39.464138%2C%20-0.334373&amp;zoom=17&amp;size=480x300&amp;format=png&amp;scale=2&amp;key=AIzaSyBhcQiQISkjMBwLAugJj8V78nMPfitnr44&amp;markers=icon%3Ahttps%3A%2F%2Fsecure.meetupstatic.com%2Fnext%2Fimages%2Fevent%2Fmup-custom-google-map-pin.png%7Ccolor%3A0xF65858%7C39.464138%2C%20-0.334373 2x"
+                                                                src="https://maps-googleapis.meetup.com/maps/api/staticmap?center=39.464138%2C%20-0.334373&amp;zoom=17&amp;size=480x300&amp;format=png&amp;scale=1&amp;key=AIzaSyBhcQiQISkjMBwLAugJj8V78nMPfitnr44&amp;markers=icon%3Ahttps%3A%2F%2Fsecure.meetupstatic.com%2Fnext%2Fimages%2Fevent%2Fmup-custom-google-map-pin.png%7Ccolor%3A0xF65858%7C39.464138%2C%20-0.334373"
+                                                                alt="Google map of the user&#x27;s next upcoming event&#x27;s location" />
+                                                        </picture>
+                                                    </a></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-full"></div>
+                            <div class="px-6 sm:px-4 xl:px-0 md:max-w-screen w-full"></div>
+                            <div class="w-full md:max-w-screen"></div>
+                        </div>
+                        <div class="sticky bottom-0 z-10 w-full bg-white px-5 py-5 xl:px-0"
+                            data-event-label="action-bar" style="bottom:-100px">
+                            <div class="md:max-w-screen mx-auto">
+                                <div class="flex justify-between text-gray7">
+                                    <div class="hidden flex-col justify-center sm:flex">
+                                        <div></div>
+                                        <div>
+                                            <p class="font-semibold">Linters en Python (con ejemplo práctico)</p>
+                                        </div>
+                                    </div>
+                                    <div class="w-full sm:w-auto">
+                                        <div class="flex items-center justify-around">
+                                            <div class="flex items-center md:block">
+                                                <div class="flex flex-col">
+                                                    <div class="flex items-center"><span
+                                                            class="font-semibold">FREE</span></div>
+                                                </div>
+                                            </div>
+                                            <div class="ml-5 flex items-center space-x-3 sm:space-x-5">
+                                                <div class="flex items-center">
+                                                    <div><button
+                                                            class="font-semibold py-3.5 lg:py-2.5 lg:px-8 px-4 rounded-lg border-2 border-viridian rounded-lg leading-8 transition-all fill-current text-viridian hover:border-buttonHoverSecondary focus:outline focus:outline-offset-2 focus:outline-2 focus:outline-viridian"
+                                                            aria-label="Share event Linters en Python (con ejemplo práctico)"
+                                                            tabindex="0" data-element-name="share-btn-share-click"
+                                                            data-event-label="share-btn-share-click"
+                                                            data-testid="share-btn">
+                                                            <div class="flex items-center flex-row-reverse">
+                                                                <div></div>
+                                                            </div>
+                                                        </button></div>
+                                                </div>
+                                                <div class="flex items-center"><button data-testid="attend-irl-btn"
+                                                        data-event-label="event-rsvp-Attend"
+                                                        class="relative whitespace-nowrap rounded-lg border border-peach bg-peach px-8 py-2.5 font-semibold leading-8 text-white"><span
+                                                            class="">Attend</span></button></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </main>
+                </div>
+                <footer id="main_footer" role="contentinfo" class="z-0 bg-gray7 pt-4 text-gray1 xs:mt-0"
+                    data-event-label="Footer">
+                    <div class="px-6 sm:px-4 xl:px-0 md:max-w-screen mx-auto my-0 flex flex-col space-y-6 pb-4">
+                        <div
+                            class="mt-2 flex  flex-row items-center justify-center border-b border-solid border-gray6 pb-6 sm:justify-start">
+                            <div class="hidden font-semibold sm:block">Create your own Meetup group.<a
+                                    href="https://www.meetup.com/how-to-group-start/"
+                                    data-event-label="Create your own group"
+                                    class="i2x9qzh ml-4 inline-flex rounded-md border-2 px-4 py-2 hover:bg-white hover:text-gray7 focus:bg-white focus:text-gray7">Get
+                                    Started</a></div><a data-element-name="footer-groupStartCTA"
+                                data-event-label="Start new group" href="https://www.meetup.com/how-to-group-start/"
+                                class="i2x9qzh block sm:hidden">Start a new group</a>
+                        </div>
+                        <div class="flex flex-col justify-between sm:flex-row">
+                            <nav class="mb-3 w-1/3 ">Your Account<ul>
+                                    <li class="my-1"><a
+                                            href="https://www.meetup.com/register/?returnUri=https%3A%2F%2Fwww.meetup.com%2Fpython-valencia-meetup%2Fevents%2F300608083%2F"
+                                            data-element-name="footer-signUp" data-event-label="Sign up"
+                                            class="ds-font-small cursor-pointer text-gray4 hover:text-white hover:no-underline">Sign
+                                            up</a></li>
+                                    <li class="my-1"><a
+                                            href="https://www.meetup.com/login/?returnUri=https%3A%2F%2Fwww.meetup.com%2Fpython-valencia-meetup%2Fevents%2F300608083%2F"
+                                            data-element-name="footer-logIn" data-event-label="Log in"
+                                            class="ds-font-small cursor-pointer text-gray4 hover:text-white hover:no-underline">Log
+                                            in</a></li>
+                                    <li class="my-1"><a href="https://www.meetup.com/en-US/help/"
+                                            data-element-name="footer-help" data-event-label="Help"
+                                            class="ds-font-small cursor-pointer text-gray4 hover:text-white hover:no-underline">Help</a>
+                                    </li>
+                                    <li class="my-1"><a href="https://www.meetup.com/lp/affiliate-program/"
+                                            data-element-name="footer-affiliate" data-event-label="Become an Affiliate"
+                                            class="ds-font-small cursor-pointer text-gray4 hover:text-white hover:no-underline">Become
+                                            an Affiliate</a></li>
+                                </ul>
+                            </nav>
+                            <nav class="mb-3 w-1/3 ">Discover<ul>
+                                    <li class="my-1"><a href="https://www.meetup.com/find/?source=GROUPS"
+                                            data-element-name="footer-groups" data-event-label="Groups"
+                                            class="ds-font-small cursor-pointer text-gray4 hover:text-white hover:no-underline">Groups</a>
+                                    </li>
+                                    <li class="my-1"><a href="https://www.meetup.com/find/?source=EVENTS"
+                                            data-element-name="footer-calendar" data-event-label="Calendar"
+                                            class="ds-font-small cursor-pointer text-gray4 hover:text-white hover:no-underline">Calendar</a>
+                                    </li>
+                                    <li class="my-1"><a href="https://www.meetup.com/topics/"
+                                            data-element-name="footer-topics" data-event-label="Topics"
+                                            class="ds-font-small cursor-pointer text-gray4 hover:text-white hover:no-underline">Topics</a>
+                                    </li>
+                                    <li class="my-1"><a href="https://www.meetup.com/cities/"
+                                            data-element-name="footer-cities" data-event-label="Cities"
+                                            class="ds-font-small cursor-pointer text-gray4 hover:text-white hover:no-underline">Cities</a>
+                                    </li>
+                                    <li class="my-1"><a href="https://www.meetup.com/find/online-events/"
+                                            data-element-name="onlineEventsFooterLink" data-event-label="Online Events"
+                                            class="ds-font-small cursor-pointer text-gray4 hover:text-white hover:no-underline">Online
+                                            Events</a></li>
+                                    <li class="my-1"><a href="https://www.meetup.com/blog/category/local-guides/"
+                                            data-element-name="footer-localGuidesLink" data-event-label="Local Guides"
+                                            class="ds-font-small cursor-pointer text-gray4 hover:text-white hover:no-underline">Local
+                                            Guides</a></li>
+                                    <li class="my-1"><a href="https://www.meetup.com/lp/friendship-and-socializing/"
+                                            data-element-name="footer-makeFriendsLink" data-event-label="Make Friends"
+                                            class="ds-font-small cursor-pointer text-gray4 hover:text-white hover:no-underline">Make
+                                            Friends</a></li>
+                                </ul>
+                            </nav>
+                            <nav class="mb-3 w-1/3 ">Meetup<ul>
+                                    <li class="my-1"><a href="https://www.meetup.com/about/"
+                                            data-element-name="footer-about" data-event-label="About"
+                                            class="ds-font-small cursor-pointer text-gray4 hover:text-white hover:no-underline">About</a>
+                                    </li>
+                                    <li class="my-1"><a href="https://www.meetup.com/blog/"
+                                            data-element-name="footer-blog" data-event-label="Blog"
+                                            class="ds-font-small cursor-pointer text-gray4 hover:text-white hover:no-underline">Blog</a>
+                                    </li>
+                                    <li class="my-1"><a href="https://www.meetup.com/meetup-pro/"
+                                            data-element-name="footer-meetupPro" data-event-label="Meetup Pro"
+                                            class="ds-font-small cursor-pointer text-gray4 hover:text-white hover:no-underline">Meetup
+                                            Pro</a></li>
+                                    <li class="my-1"><a href="https://www.meetup.com/careers/"
+                                            data-element-name="footer-calendar" data-event-label="Careers"
+                                            class="ds-font-small cursor-pointer text-gray4 hover:text-white hover:no-underline">Careers</a>
+                                    </li>
+                                    <li class="my-1"><a href="https://www.meetup.com/apps/"
+                                            data-element-name="footer-apps" data-event-label="Apps"
+                                            class="ds-font-small cursor-pointer text-gray4 hover:text-white hover:no-underline">Apps</a>
+                                    </li>
+                                    <li class="my-1"><a
+                                            href="https://www.meetup.com/blog/category/keep-connected-podcast/"
+                                            data-element-name="footer-podcast" data-event-label="Podcast"
+                                            class="ds-font-small cursor-pointer text-gray4 hover:text-white hover:no-underline">Podcast</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="flex flex-col items-start justify-between sm:flex-row sm:items-center">
+                            <div>
+                                <div class="mb-3">Follow us</div>
+                                <div class="mb-6 flex space-x-8"><a href="https://www.facebook.com/meetup/"
+                                        aria-label="Meetup on Facebook" data-element-name="footer-facebookSocialLink"
+                                        data-event-label="Facebook follow us">
+                                        <div style="width:30px;height:30px"></div>
+                                    </a><a href="https://twitter.com/Meetup/" aria-label="Meetup on Twitter"
+                                        data-element-name="footer-twitterSocialLink"
+                                        data-event-label="Twitter follow us">
+                                        <div style="width:30px;height:30px"></div>
+                                    </a><a href="https://www.youtube.com/meetup" aria-label="Meetup on YouTube"
+                                        data-element-name="footer-youtubeSocialLink"
+                                        data-event-label="Youtube follow us">
+                                        <div style="width:30px;height:30px"></div>
+                                    </a><a href="https://www.instagram.com/meetup/" aria-label="Instagram"
+                                        data-element-name="footer-instagramSocialLink"
+                                        data-event-label="Instagram follow us">
+                                        <div style="width:30px;height:30px"></div>
+                                    </a><a href="https://www.tiktok.com/@meetup" aria-label="TikTok"
+                                        data-element-name="footer-tiktokSocialLink" data-event-label="TikTok follow us">
+                                        <div style="width:30px;height:30px"></div>
+                                    </a></div>
+                            </div>
+                            <div class="flex items-start space-x-3 sm:items-end"><a
+                                    href="https://play.google.com/store/apps/details?id=com.meetup&amp;hl=en-US"
+                                    class="relative h-[40px] w-[140px]" aria-label="Download app from Google Play"
+                                    data-element-name="footer-googlePlayLogo" data-event-label="Google play download"
+                                    target="_blank" rel="noreferrer"><img alt="get-it-on-google-play" loading="lazy"
+                                        width="140" height="40" decoding="async" data-nimg="1"
+                                        class="h-[40px] w-[140px]" style="color:transparent"
+                                        srcSet="https://secure.meetupstatic.com/next/images/app-download/android/download_en-US.svg?w=256 1x, https://secure.meetupstatic.com/next/images/app-download/android/download_en-US.svg?w=384 2x"
+                                        src="https://secure.meetupstatic.com/next/images/app-download/android/download_en-US.svg?w=384" /></a><a
+                                    href="https://apps.apple.com/us/app/meetup/id375990038"
+                                    class="relative h-[40px] w-[140px]" aria-label="Download app from App Store"
+                                    data-element-name="footer-appStoreLogo" data-event-label="App store download"
+                                    target="_blank" rel="noreferrer"><img alt="download-on-the-app-store" loading="lazy"
+                                        width="140" height="40" decoding="async" data-nimg="1"
+                                        class="h-[40px] w-[140px]" style="color:transparent"
+                                        srcSet="https://secure.meetupstatic.com/next/images/app-download/ios/download_en-US.svg?w=256 1x, https://secure.meetupstatic.com/next/images/app-download/ios/download_en-US.svg?w=384 2x"
+                                        src="https://secure.meetupstatic.com/next/images/app-download/ios/download_en-US.svg?w=384" /></a>
+                            </div>
+                        </div>
+                        <div
+                            class="ds-font-small flex flex-col space-y-4 pt-2 text-gray4 sm:flex-row sm:space-x-6 sm:space-y-0">
+                            <span class="text-white">© <!-- -->2024 Meetup</span><a
+                                href="https://help.meetup.com/hc/en-us/articles/360027447252"
+                                data-event-label="Terms of Service"
+                                class="ds-font-small cursor-pointer text-gray4 hover:text-white hover:no-underline">Terms
+                                of Service</a><a href="https://www.meetup.com/privacy/"
+                                data-event-label="Privacy Policy"
+                                class="ds-font-small cursor-pointer text-gray4 hover:text-white hover:no-underline">Privacy
+                                Policy</a><a href="https://help.meetup.com/hc/en-us/articles/360046339551"
+                                data-event-label="Cookie Policy"
+                                class="ds-font-small cursor-pointer text-gray4 hover:text-white hover:no-underline">Cookie
+                                Policy</a><a href="https://www.meetup.com/help/" data-event-label="Help"
+                                class="ds-font-small cursor-pointer text-gray4 hover:text-white hover:no-underline">Help</a>
+                        </div>
+                        <div id="choice-footer-msg"></div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+        <div id="modal"></div>
+    </div>
+    <script id="__NEXT_DATA__"
+        type="application/json">{"props":{"pageProps":{"isMobile":false,"showMobileBanner":true,"memberLocale":"en-US","localeMessages":{"a11y.skipToContent":"Skip to content","desktopHeader.meetupLogo":"Meetup logo","event.info.only1Host":"{HOST_1}","avatar.photoOf":"Photo of {NAME}","event-home.description":"Details","event-home.moreEvents":"See more events","groupCard.publicGroupPrivacy":"This group’s content, including its members and event details, are visible to the public.","event-home.durationTo":"to {END_DATE}","relatedEvents.findMoreEventsVariantV2":"Members are also interested in","relatedEvents.seeAll":"See all","eventStickyFooter.freePrice":"FREE","shareButton.eventShareTitle":"Share this event","shareButton.label":"Share event","eventStickyFooter.attend":"Attend","footer.meetupOnFacebook":"Meetup on Facebook","footer.meetupOnTwitter":"Meetup on Twitter","footer.meetupOnYoutube":"Meetup on YouTube","footer.meetupOnInstagram":"Instagram","footer.meetupOnTiktok":"TikTok","footer.createYourOwnGroup":"Create your own Meetup group.","footer.getStarted":"Get Started","footer.startNewGroup":"Start a new group","footer.yourAccount":"Your Account","footer.signUp":"Sign up","footer.logIn":"Log in","footer.help":"Help","footer.becomeAffiliate":"Become an Affiliate","footer.discover":"Discover","footer.groups":"Groups","footer.calendar":"Calendar","footer.topics":"Topics","footer.cities":"Cities","footer.onlineEvents":"Online Events","footer.localGuides":"Local Guides","footer.makeFriendsLp":"Make Friends","footer.meetupText":"Meetup","footer.about":"About","footer.blog":"Blog","footer.meetupPro":"Meetup Pro","footer.careers":"Careers","footer.apps":"Apps","footer.podcast":"Podcast","footer.followUs":"Follow us","footer.downloadFromGooglePlay":"Download app from Google Play","footer.downloadFromAppStore":"Download app from App Store","footer.meetupYear":"{YEAR} Meetup","footer.termsOfService":"Terms of Service","footer.privacyPolicy":"Privacy Policy","footer.cookiePolicy":"Cookie Policy"},"user":null,"eventId":"300608083","slug":"python-valencia-meetup","event":{"__typename":"Event","id":"300608083","token":"300608083","title":"Linters en Python (con ejemplo práctico)","description":"Entre las diferentes herramientas que disponemos en python para mejorar la calidad de nuestro código, los linters destacan por su inmediatez y sencillez. En esta charla hablaremos de nuestra experiencia real instalando y usando Ruff, el linter de moda. Además, veremos un caso práctico de mejora de código gracias al uso del linter.\n\n## Breve resumen de trayectoria laboral\n\n* Julio Martínez: Staff Engineer en Datamaran. Lleva desde 2004 trabajando en la industria. Empezó como desarrollador web, para especializarse en backend y más tarde en big data. Ha trabajado en compañías como Ulabox (Barcelona), Hybrid Theory (Londres) y Datamaran (Valencia - Londres).\n* Elena M. Codonyer : Software Engineer en Datamaran. Lleva desde 2020 trabajando en Datamaran, donde empezó como Data Scientist. Más tarde se ha especializado en backend, con un interés en la mejora de la calidad de código.","eventUrl":"https://www.meetup.com/python-valencia-meetup/events/300608083/","status":"ACTIVE","eventType":"PHYSICAL","featuredEventPhoto":{"__typename":"PhotoInfo","id":"520622341","source":"https://secure.meetupstatic.com/photos/event/9/2/5/highres_520622341.jpeg","baseUrl":"https://secure-content.meetupstatic.com/images/classic-events/"},"eventHosts":[{"__typename":"EventHost","memberId":"216149995"}],"dateTime":"2024-04-30T18:30:00+02:00","endTime":"2024-04-30T20:30:00+02:00","isFeatured":false,"venue":{"__typename":"Venue","id":"27591803","name":"wayCO Cabanyal | Coworking València","address":"Carrer de Marià Cuber, 17","city":"València","state":"Va","country":"es","lat":39.464138,"lng":-0.334373},"maxTickets":0,"series":null,"rsvps":{"__typename":"RsvpConnection","totalCount":0},"rsvpState":"JOIN_OPEN","waitlistMode":"AUTO","guestsAllowed":false,"numberOfAllowedGuests":0,"proCompleteRsvp":{"__typename":"ProCompleteRsvp","link":null},"topics":{"__typename":"TopicsConnection","edges":[{"__typename":"TopicEdge","node":{"__typename":"Topic","id":"1064","name":"Python"}},{"__typename":"TopicEdge","node":{"__typename":"Topic","id":"8192","name":"Open Source"}},{"__typename":"TopicEdge","node":{"__typename":"Topic","id":"15582","name":"Web Development"}},{"__typename":"TopicEdge","node":{"__typename":"Topic","id":"32528","name":"Computer Programming"}}]},"rsvpSurveySettings":null,"rsvpQuestions":[],"rsvp":null,"rsvpSettings":{"__typename":"RsvpOpenSettings","rsvpOpenTime":null,"rsvpCloseTime":null},"covidPrecautions":{"__typename":"CovidPrecautions","masks":null,"vaccinations":null,"details":null,"venueType":null},"isNetworkEvent":false,"hosts":[{"__typename":"EventHost","id":"216149995","name":"Andros Fenollosa Hurtado","memberPhoto":{"__typename":"PhotoInfo","baseUrl":"https://secure-content.meetupstatic.com/images/classic-member/","id":"313048108"}}],"feeSettings":null,"networkEvent":null,"speakerDetails":null,"group":{"__typename":"Group","id":"16514622","name":"Python Valencia","isPrivate":false,"timezone":"Europe/Madrid","link":"https://www.meetup.com/python-valencia-meetup","joinMode":"OPEN","topicCategory":{"__typename":"TopicCategory","id":"546","name":"Technology","urlkey":"technology"},"topics":[{"__typename":"Topic","id":"8192","urlkey":"open-source","name":"Open Source"},{"__typename":"Topic","id":"15582","urlkey":"web-development","name":"Web Development"},{"__typename":"Topic","id":"32528","urlkey":"computer-programming","name":"Computer Programming"},{"__typename":"Topic","id":"1064","urlkey":"python","name":"Python"},{"__typename":"Topic","id":"659","urlkey":"web-design","name":"Web Design"},{"__typename":"Topic","id":"788002","urlkey":"web-technology","name":"Web Technology"},{"__typename":"Topic","id":"120095","urlkey":"software-development","name":"Software Development"}],"urlname":"python-valencia-meetup","country":"es","state":"","city":"Valencia","needsPhoto":false,"proNetwork":{"__typename":"ProNetwork","id":"610554310475497472","urlname":"python-software-foundation-meetups","name":"Python Software Foundation Meetup Pro Network","link":"https://www.meetup.com/pro/python-software-foundation-meetups/","isMemberEmailShared":false},"featuredEvent":null,"stats":{"__typename":"GroupStats","memberCounts":{"__typename":"GroupMemberCounts","all":1569}},"needsQuestions":false,"duesSettings":null,"questions":[],"sponsors":{"__typename":"ProGroupSponsorsConnection","edges":[]},"groupPhoto":{"__typename":"PhotoInfo","id":"512739430","baseUrl":"https://secure-content.meetupstatic.com/images/classic-events/","source":"https://secure.meetupstatic.com/photos/event/9/a/0/6/highres_512739430.jpeg"},"status":"PAID"},"timezone":"Europe/Madrid","waiting":0,"timeStatus":"UPCOMING","rsvpEventQuestion":null,"host":{"__typename":"EventHost","id":"216149995","name":"Andros Fenollosa Hurtado","memberPhoto":{"__typename":"PhotoInfo","baseUrl":"https://secure-content.meetupstatic.com/images/classic-member/","id":"313048108"}},"currency":"USD"},"__APOLLO_STATE__":{"ROOT_QUERY":{"__typename":"Query","self":null,"event({\"id\":\"300608083\"})":{"__ref":"Event:300608083"}},"PhotoInfo:520622341":{"__typename":"PhotoInfo","id":"520622341","highResUrl":"https://secure.meetupstatic.com/photos/event/9/2/5/highres_520622341.jpeg","baseUrl":"https://secure-content.meetupstatic.com/images/classic-events/"},"Venue:27591803":{"__typename":"Venue","id":"27591803","name":"wayCO Cabanyal | Coworking València","address":"Carrer de Marià Cuber, 17","city":"València","state":"Va","country":"es","lat":39.464138,"lon":-0.334373},"Topic:1064":{"__typename":"Topic","id":"1064","name":"Python","urlkey":"python"},"Topic:8192":{"__typename":"Topic","id":"8192","name":"Open Source","urlkey":"open-source"},"Topic:15582":{"__typename":"Topic","id":"15582","name":"Web Development","urlkey":"web-development"},"Topic:32528":{"__typename":"Topic","id":"32528","name":"Computer Programming","urlkey":"computer-programming"},"PhotoInfo:313048108":{"__typename":"PhotoInfo","baseUrl":"https://secure-content.meetupstatic.com/images/classic-member/","id":"313048108"},"EventHost:216149995":{"__typename":"EventHost","memberId":"216149995","name":"Andros Fenollosa Hurtado","memberPhoto":{"__ref":"PhotoInfo:313048108"}},"TopicCategory:546":{"__typename":"TopicCategory","id":"546","name":"Technology","urlkey":"technology"},"Topic:659":{"__typename":"Topic","id":"659","urlkey":"web-design","name":"Web Design"},"Topic:788002":{"__typename":"Topic","id":"788002","urlkey":"web-technology","name":"Web Technology"},"Topic:120095":{"__typename":"Topic","id":"120095","urlkey":"software-development","name":"Software Development"},"ProNetwork:610554310475497472":{"__typename":"ProNetwork","id":"610554310475497472","urlname":"python-software-foundation-meetups","name":"Python Software Foundation Meetup Pro Network","link":"https://www.meetup.com/pro/python-software-foundation-meetups/","isProEmailShared":false},"PhotoInfo:512739430":{"__typename":"PhotoInfo","id":"512739430","baseUrl":"https://secure-content.meetupstatic.com/images/classic-events/","highResUrl":"https://secure.meetupstatic.com/photos/event/9/a/0/6/highres_512739430.jpeg"},"Group:16514622":{"__typename":"Group","id":"16514622","name":"Python Valencia","isPrivate":false,"timezone":"Europe/Madrid","link":"https://www.meetup.com/python-valencia-meetup","joinMode":"OPEN","topicCategory":{"__ref":"TopicCategory:546"},"activeTopics":[{"__ref":"Topic:8192"},{"__ref":"Topic:15582"},{"__ref":"Topic:32528"},{"__ref":"Topic:1064"},{"__ref":"Topic:659"},{"__ref":"Topic:788002"},{"__ref":"Topic:120095"}],"urlname":"python-valencia-meetup","country":"es","state":"","city":"Valencia","needsPhoto":false,"proNetwork":{"__ref":"ProNetwork:610554310475497472"},"featuredEvent":null,"stats":{"__typename":"GroupStats","memberCounts":{"__typename":"GroupMemberCounts","all":1569}},"needsQuestions":false,"duesSettings":null,"questions":[],"sponsors":{"__typename":"ProGroupSponsorsConnection","edges":[]},"keyGroupPhoto":{"__ref":"PhotoInfo:512739430"},"status":"PAID"},"Event:300608083":{"__typename":"Event","id":"300608083","token":"300608083","title":"Linters en Python (con ejemplo práctico)","description":"Entre las diferentes herramientas que disponemos en python para mejorar la calidad de nuestro código, los linters destacan por su inmediatez y sencillez. En esta charla hablaremos de nuestra experiencia real instalando y usando Ruff, el linter de moda. Además, veremos un caso práctico de mejora de código gracias al uso del linter.\n\n## Breve resumen de trayectoria laboral\n\n* Julio Martínez: Staff Engineer en Datamaran. Lleva desde 2004 trabajando en la industria. Empezó como desarrollador web, para especializarse en backend y más tarde en big data. Ha trabajado en compañías como Ulabox (Barcelona), Hybrid Theory (Londres) y Datamaran (Valencia - Londres).\n* Elena M. Codonyer : Software Engineer en Datamaran. Lleva desde 2020 trabajando en Datamaran, donde empezó como Data Scientist. Más tarde se ha especializado en backend, con un interés en la mejora de la calidad de código.","eventUrl":"https://www.meetup.com/python-valencia-meetup/events/300608083/","status":"ACTIVE","eventType":"PHYSICAL","featuredEventPhoto":{"__ref":"PhotoInfo:520622341"},"eventHosts":[{"__typename":"EventHost","memberId":"216149995","__ref":"EventHost:216149995"}],"dateTime":"2024-04-30T18:30:00+02:00","endTime":"2024-04-30T20:30:00+02:00","isFeatured":false,"venue":{"__ref":"Venue:27591803"},"maxTickets":0,"series":null,"rsvps({\"filter\":{\"rsvpStatus\":[\"WAITLIST\"]}})":{"__typename":"RsvpConnection","totalCount":0},"rsvpState":"JOIN_OPEN","waitlistMode":"AUTO","guestsAllowed":false,"numberOfAllowedGuests":0,"proCompleteRsvp":{"__typename":"ProCompleteRsvp","link":null},"topics":{"__typename":"TopicsConnection","edges":[{"__typename":"TopicEdge","node":{"__ref":"Topic:1064"}},{"__typename":"TopicEdge","node":{"__ref":"Topic:8192"}},{"__typename":"TopicEdge","node":{"__ref":"Topic:15582"}},{"__typename":"TopicEdge","node":{"__ref":"Topic:32528"}}]},"rsvpSurveySettings":null,"rsvpQuestions":[],"rsvp":null,"rsvpSettings":{"__typename":"RsvpOpenSettings","rsvpOpenTime":null,"rsvpCloseTime":null},"covidPrecautions":{"__typename":"CovidPrecautions","masks":null,"vaccinations":null,"details":null,"venueType":null},"isNetworkEvent":false,"feeSettings":null,"networkEvent":null,"speakerDetails":null,"group":{"__ref":"Group:16514622"}}}},"__N_SSP":true},"page":"/[slug]/events/[eventId]","query":{"slug":"python-valencia-meetup","eventId":"300608083"},"buildId":"6840afd9e3dd06b271b93757c5df243b735677ce","isFallback":false,"dynamicIds":[1640],"gssp":true,"locale":"en-US","locales":["en-US","en-AU","de","de-DE","es","es-ES","fr","fr-FR","it","it-IT","ja","ja-JP","ko","ko-KR","nl","nl-NL","pl","pl-PL","pt","pt-BR","ru","ru-RU","tr","tr-TR","th-TH"],"defaultLocale":"en-US","scriptLoader":[]}</script>
+</body>
+
+</html>
