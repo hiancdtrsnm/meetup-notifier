@@ -14,11 +14,16 @@ def events(events_url: str):
     typer.echo(
         json.dumps([asdict(event) for event in events], default=str, ensure_ascii=False)
     )
+    if not events:
+        raise typer.Exit(code=1)
 
 
 @app.command()
 def last_event(events_url: str):
     events = get_events(events_url)
+    if not events:
+        typer.echo("No event found", err=True)
+        raise typer.Exit(code=1)
     last_event = events[0]
     typer.echo(json.dumps(asdict(last_event), default=str, ensure_ascii=False))
 
