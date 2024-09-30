@@ -1,4 +1,5 @@
-from meetup_notifier import MeetupEvent, get_events
+from meetup_notifier import get_events
+from meetup_notifier.meetup import MeetupEvent
 import typer
 from typing_extensions import Annotated
 from datetime import datetime, timedelta
@@ -76,3 +77,4 @@ def notify(
 
 if __name__ == "__main__":
     typer.run(notify)
+
